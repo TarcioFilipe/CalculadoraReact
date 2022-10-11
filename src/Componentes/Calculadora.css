@@ -1,0 +1,167 @@
+.btns {
+    background-color: #1C1C1C;
+    border-radius: 1em;
+    padding: 1.5em;
+}
+
+/* BOTÕES */
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 3em;
+    height: 3em;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 2em;
+    margin: 0.3em;
+    background-color: #505050;
+    color: #ffffff;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #f7f7f7;
+    color: #1C1C1C;
+}
+
+.especial {
+    background-color: #D4D4D2;
+    color: #1C1C1C;
+    font-weight: 600;
+}
+
+.operacao {
+    background-color: #FF9500;
+    color: #ffffff;
+}
+
+.operacao:focus {
+    background-color: #ffffff;
+    color: #FF9500;
+}
+
+#igual:focus {
+    background-color: #FF9500;
+    color: #ffffff;
+}
+
+#zero {
+    width: 6.5em;
+    text-align: left;
+    padding-left: 1.25em;
+}
+
+/* VISOR ------- */
+
+.visor {
+    color: #ffffff;
+    display: flex;
+    justify-content: right;
+    padding-right: 1em;
+    font-size: 2em;
+    overflow: auto;
+    direction: rtl;
+}
+
+div::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+    height: 10px;
+
+  }
+  
+  div::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 12px;
+  }
+  
+  div::-webkit-scrollbar-thumb {
+    background-color: #FF9500;    /* color of the scroll thumb */
+    border-radius: 20px;      
+  }
+
+/* LINHAS----------- */
+
+.linha{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+   
+
+}
+
+
+/*TELAS ATE 425 --------*/
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    
+    .btns {
+        background-color: #1C1C1C;
+        border-radius: 1em;
+        padding: 0.5em;
+
+    }
+
+    /* BOTÕES */
+
+    button {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 3em;
+        height: 3em;
+        font-size: 1.5em;
+        border: none;
+        border-radius: 2em;
+        margin: 0.3em;
+        background-color: #505050;
+        color: #ffffff;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: #f7f7f7;
+        color: #1C1C1C;
+    }
+
+
+    .especial {
+        background-color: #D4D4D2;
+        color: #1C1C1C;
+        font-weight: 600;
+    }
+
+    .operacao {
+        background-color: #FF9500;
+        color: #ffffff;
+    }
+
+    .operacao:focus {
+        background-color: #ffffff;
+        color: #FF9500;
+    }
+
+    #igual:focus {
+        background-color: #FF9500;
+        color: #ffffff;
+    }
+
+    #zero {
+        width: 6em;
+        text-align: left;
+        padding-left: 1em;
+    }
+
+    /* VISOR ------- */
+
+    .visor {
+        color: #ffffff;
+        display: flex;
+        width: 90%;
+        font-size: 2em;
+        overflow: auto;
+        direction: rtl;
+    }
+
+}
+
